@@ -17,7 +17,7 @@ function ServicesSection() {
   return (
     <>
       <section className="mt-6 md:mt-16 lg:mt-20" id="services font-Figtree ">
-        <div className="flex items-center justify-between gap-4 p-6 md:p-12 lg:p-16 bg-white text-center sm:flex-row-reverse">
+        <div className="flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0 gap-4 p-6 md:p-12 lg:p-16 bg-white text-center sm:flex-row-reverse">
           <button className="py-2 px-4 rounded-2xl bg-slate-100 shadow-2xl shadow-gray-300 text-black text-lg hover:bg-green-600 hover:text-black transition-all duration-300">
             <a href="#services">
               Explore Services <GoArrowUpRight className="inline-block" />

@@ -13,8 +13,8 @@ function ProjectSection({ title, description, limit }) {
     ? projectsData.slice(0, limit)
     : projectsData;
   return (
-    <section className="p-6 md:p-16 lg:p-20 bg-slate-100 flex flex-col gap-12">
-      <div className=" flex flex-col md:flex-row  p-2 justify-between mb-6">
+    <section className="p-8 md:p-16 lg:p-20 bg-slate-100 flex flex-col gap-12">
+      <div className=" flex flex-col md:flex-row space-y-8 md:space-y-0 p-2 justify-between mb-6">
         <div>
           <h2 className="text-xl font-bold">{title}</h2>
           <p className="text-gray-600">{description}</p>

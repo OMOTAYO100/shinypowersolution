@@ -15,9 +15,9 @@ function BlogSection() {
         Latest Articles
       </h2>
 
-      <div className="flex justify-between" >
+      <div className="flex flex-col md:flex-row space-y-6 md:space-y-0 justify-between" >
       
-       <Link to="/blog" className="text-green-600 font-medium mb-8 inline-block bg-slate-100 p-2 rounded-xl hover:bg-green-600 hover:text-white transition-all duration-300">
+       <Link to="/blog" className="self-center text-green-600 font-medium mb-8 inline-block bg-slate-100 p-2 rounded-xl hover:bg-green-600 hover:text-white transition-all duration-300">
         View All Articles
       </Link>
 

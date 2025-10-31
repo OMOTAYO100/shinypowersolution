@@ -18,12 +18,12 @@ function HeroSection({title, subtitle, }) {
 
   return (
     <>
-      <section style={{backgroundImage: `url(${solarBg})`}} className=" h-screen bg-cover bg-center p-6 md:p-16 lg:p-20 space-y-12 flex flex-col justify-center font-Figtree">
+      <section style={{backgroundImage: `url(${solarBg})`}} className=" h-screen bg-cover bg-center p-8 md:p-16 lg:p-20 space-y-12 flex flex-col justify-center font-Figtree">
         <h1 className="text-5xl md:text-6xl font-bold text-center text-gray-200">
           {title}
         </h1>
 
-        <div className="space-y-8">
+        <div className="space-y-8 flex flex-col justify-center items-center">
           <h3 className=" text-green-500 text-xl sm:text-3xl md:text-4xl text-center font-semibold mt-6">
             ⚡{currentWord} {subtitle}
           </h3>
@@ -43,7 +43,7 @@ function HeroSection({title, subtitle, }) {
         </div>
       </section>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 p-6 md:p-16 lg:p-20 text-center font-Figtree">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 p-8 md:p-16 lg:p-20 text-center font-Figtree">
         <div className="flex items-center gap-1">
           <p className="text-6xl font-bold text-green-500">1200</p>
           <p className="text-gray-400"><i>Hectors total area covered</i></p>
