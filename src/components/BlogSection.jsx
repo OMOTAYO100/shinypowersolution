@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { solarNewsData } from "../data/solarNewsData";
+import { solarNewsData } from "../data/SolarNewsData";
 import { Link } from "react-router-dom";
 
 function BlogSection() {
