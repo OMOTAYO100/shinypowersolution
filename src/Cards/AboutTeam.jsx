@@ -15,11 +15,11 @@ function AboutTeam({ image, name, text }) {
         </figure>
         <h3 className="text-lg font-semibold">{name}</h3>
         <p className="text-gray-500 text-center mb-3">{text}</p>
-        <div className="flex gap-4 text-green-500">
-          <MdEmail />
-          <FaLinkedinIn />
-          <FaFacebookF />
-          <FaWhatsapp />
+        <div className="flex gap-4 text-green-500 text-xl">
+          <MdEmail className="cursor-pointer"/>
+          <FaLinkedinIn className="cursor-pointer"/>
+          <FaFacebookF className="cursor-pointer" />
+          <FaWhatsapp className="cursor-pointer" />
         </div>
       </div>
     </>

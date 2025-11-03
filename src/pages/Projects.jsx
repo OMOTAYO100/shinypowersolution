@@ -2,7 +2,6 @@ import React from 'react'
 import NavbarSection from '../components/NavbarSection'
 import ProjectSection from '../components/ProjectSection'
 import ContactSection from '../components/ContactSection' 
-import ProjectCards from '../Cards/ProjectCards'
 
 function Projects() {
   return (

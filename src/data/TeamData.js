@@ -7,7 +7,7 @@ const aboutData = [
     title: "Our Growth Journey",
     subtitle: "Powering Homes Since 2010",
     image: TeamA,
-    name: "Tayo Oshibote",
+    name: "Jereniah Doku",
     text: "Founder and CEO of Shiny Power Solutions.",
   },
   {
