@@ -24,7 +24,7 @@ function HeroSection({title, subtitle, }) {
         </h1>
 
         <div className="space-y-8 flex flex-col justify-center items-center">
-          <h3 className=" text-green-500 text-xl sm:text-3xl md:text-4xl text-center font-semibold mt-6">
+          <h3 className=" text-green-500 text-xl sm:text-3xl md:text-4xl text-center font-semibold ">
             ⚡{currentWord} {subtitle}
           </h3>
           <p className="text-center text-2xl sm:w-[60%] mx-auto text-white">
@@ -34,7 +34,7 @@ function HeroSection({title, subtitle, }) {
             power, we help you stay connected, productive and worry-free.
           </p>
 
-          <div className=" flex space-x-6 justify-self-center mt-16">
+          <div className=" flex space-x-6 justify-self-center mt-10">
             <button className=" bg-green-500 p-2 text-md text-white rounded cursor-pointer">
               Learn More {<GoArrowUpRight className="inline-block" />}
             </button>
