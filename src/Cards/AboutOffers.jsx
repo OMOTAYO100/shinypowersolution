@@ -25,7 +25,7 @@ function AboutOffers() {
                        before:content-[''] before:absolute before:left-0 before:top-0 before:h-full 
                      before:w-[85%] before:bg-green-500 before:rounded-full"
             ></div>
-            <p>Cost effectiveness</p>
+            <p className="text-sm text-green-500">Cost effectiveness</p>
           </div>
 
           <div className="flex items-center gap-2">
@@ -34,7 +34,7 @@ function AboutOffers() {
      before:content-[''] before:absolute before:left-0 before:top-0 before:h-full 
      before:w-[90%] before:bg-green-500 before:rounded-full"
             ></div>
-            <p>Effiency</p>
+            <p className="text-sm text-green-500">Efficiency</p>
           </div>
 
           <div className="flex items-center gap-2">
@@ -43,7 +43,7 @@ function AboutOffers() {
      before:content-[''] before:absolute before:left-0 before:top-0 before:h-full 
      before:w-[98%] before:bg-green-500 before:rounded-full"
             ></div>
-            <p>Quality</p>
+            <p className="text-sm text-green-500">Quality</p>
           </div>
         </div>
       </div>
