@@ -36,9 +36,9 @@ function ContactSection({ title, description }) {
               />
             </h2>
 
-            <div className="absolute bottom-8 left-4 flex gap-4 text-white text-xl">
+            <div className="absolute bottom-4 md:bottom-8 left-4 flex gap-4 text-white text-xl">
                <div className="">
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-4 ">
           <h2 className="text-2xl font-bold">
             SHIN<span className="text-green-500">Y</span>
           </h2>
