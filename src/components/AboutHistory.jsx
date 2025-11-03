@@ -79,18 +79,11 @@ function AboutHistory({ title, subtitle, description }) {
           </div>
         </div>
 
-        {/* <dinpm run devv className=" flex items-center justify-center mt-8 space-x-4 md:space-x-20 bg-slate-100 text-green-500">
-          <p className="text-xl">Lithuim</p>
-          <p className="text-xl">Lithuim</p>
-          <p className="text-xl">Lithuim</p>
-          <p className="text-xl">Lithuim</p>
-          <p className="text-xl">Lithuim</p>
-          <p className="text-xl">Lithuim</p>
-        </div> */}
-
-       
-        <WorkProgress />
         
+
+
+        <WorkProgress />
+
             {/* Team Section */}
       <section className="mt-16">
         <h2 className="text-3xl font-bold text-center mb-10">Meet Our Team</h2>
