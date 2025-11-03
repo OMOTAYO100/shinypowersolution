@@ -13,7 +13,7 @@ function ProjectCards({ title, image, text }) {
                 {title}
                 <GoArrowUpRight className="inline-block text-xl font-bold" />
               </figcaption>
-              <p className="absolute bottom-[-50px] left-0 w-full text-center text-white text-lg px-4 md:opacity-0 
+              <p className="absolute bottom-4 md:bottom-[-50px] left-0 w-full text-center text-white text-lg px-4 md:opacity-0 
                    transition-all duration-700 ease-in-out group-hover:bottom-2 group-hover:opacity-100">{text}</p>
               </figure>
 
