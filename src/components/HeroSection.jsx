@@ -34,7 +34,7 @@ function HeroSection({title, subtitle, }) {
             power, we help you stay connected, productive and worry-free.
           </p>
 
-          <div className=" flex space-x-6 justify-self-center mt-10">
+          <div className=" flex space-x-6 justify-self-center mt-10" data-aos="fade-up" data-aos-delay="800">
             <button className=" bg-green-500 p-2 text-md text-white rounded cursor-pointer">
               Learn More {<GoArrowUpRight className="inline-block" />}
             </button>
@@ -43,21 +43,21 @@ function HeroSection({title, subtitle, }) {
         </div>
       </section>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 p-8 md:p-16 lg:p-20 text-center font-Figtree">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 p-8 md:p-16 lg:p-20 text-center font-Figtree" data-aos="zoom in" data-aos-delay="300">
         <div className="flex items-center gap-1">
-          <p className="text-6xl font-bold text-green-500">1200</p>
+          <p className="text-6xl font-bold text-green-500" data-aos="zoom in" data-aos-delay="400">1200</p>
           <p className="text-gray-400"><i>Hectors total area covered</i></p>
         </div>
         <div className="flex items-center gap-1">
-          <p className="text-6xl font-bold text-green-500">98%</p>
+          <p className="text-6xl font-bold text-green-500" data-aos="zoom in" data-aos-delay="500">98%</p>
           <p className="text-gray-400"><i>Our green solutions</i></p>
         </div>
         <div className="flex items-center gap-1">
-          <p className="text-6xl font-bold text-green-500">5</p>
+          <p className="text-6xl font-bold text-green-500" data-aos="zoom in" data-aos-delay="600">5</p>
           <p className="text-gray-400"><i>Top industries served</i></p>
         </div>
         <div className="flex items-center gap-1">
-          <p className="text-6xl font-bold text-green-500">12+</p>
+          <p className="text-6xl font-bold text-green-500" data-aos="zoom in" data-aos-delay="700">12+</p>
           <p className="text-gray-400"><i>Years Experience in the industry</i></p>
         </div>
       </div>
