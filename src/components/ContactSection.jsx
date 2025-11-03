@@ -39,19 +39,19 @@ function ContactSection({ title, description }) {
             <div className="absolute bottom-4 md:bottom-8 left-4 flex gap-4 text-white text-xl">
                <div className="">
         <div className="flex flex-col gap-4 ">
-          <h2 className="text-2xl font-bold">
+          <h2 className="text-2xl font-bold" data-aos="fade-up" data-aos-delay="300">
             SHIN<span className="text-green-500">Y</span>
           </h2>
-          <p className="w-82 text-gray-100">
+          <p className="w-82 text-gray-100" data-aos="fade-up" data-aos-delay="400">
             Explore the latest advancements in renewable energy, sustainable
             living practices, and cutting-edge.
           </p>
-          <h4 className="text-2xl font-semibold text-black">Follow Us</h4>
+          <h4 className="text-2xl font-semibold text-green-500" data-aos="fade-up" data-aos-delay="500">Follow Us</h4>
           <div className="flex gap-4">
-            <FaFacebookF className="text-3xl hover:text-green-500 cursor-pointer bg-blue-500 p-1 rounded-full" />
-              <FaInstagram className="text-3xl hover:text-green-500 cursor-pointer bg-gradient-to-b from-purple-500 via-red-500 to-yellow-400 p-1 rounded-full" />
-              <FaTwitter className="text-3xl hover:text-green-500 cursor-pointer bg-blue-400 p-1 rounded-full" />
-              <FaLinkedin className="text-3xl hover:text-green-500 cursor-pointer bg-blue-400 p-1 rounded-full" />
+            <FaFacebookF className="text-3xl hover:text-green-500 cursor-pointer bg-blue-500 p-1 rounded-full" data-aos="fade-up" data-aos-delay="600" />
+              <FaInstagram className="text-3xl hover:text-green-500 cursor-pointer bg-gradient-to-b from-purple-500 via-red-500 to-yellow-400 p-1 rounded-full" data-aos="fade-up" data-aos-delay="700" />
+              <FaTwitter className="text-3xl hover:text-green-500 cursor-pointer bg-blue-400 p-1 rounded-full" data-aos="fade-up" data-aos-delay="800" />
+              <FaLinkedin className="text-3xl hover:text-green-500 cursor-pointer bg-blue-400 p-1 rounded-full" data-aos="fade-up" data-aos-delay="900" />
           </div>
         </div>
       </div>
@@ -59,17 +59,18 @@ function ContactSection({ title, description }) {
           </figure>
         </div>
 
-        <div className="flex-1 w-full h-[500px] flex flex-col justify-center shadow-lg p-6 rounded-lg border-2 border-gray-200">
-          <h2 className="text-3xl font-bold mb-4 text-center text-green-500">
+        <div className="flex-1 w-full h-[500px] flex flex-col justify-center shadow-lg p-6 rounded-lg border-2 border-gray-200" data-aos="fade-up" data-aos-delay="400">
+          <h2 className="text-3xl font-bold mb-4 text-center text-green-500" data-aos="fade-up" data-aos-delay="200">
             {title}
           </h2>
-          <p className="text-center text-gray-600">{description}</p>
+          <p className="text-center text-gray-600" data-aos="fade-up" data-aos-delay="300">{description}</p>
 
-          <form className="space-y-4">
+          <form className="space-y-4" data-aos="fade-up" data-aos-delay="400">
             <div>
               <label
                 htmlFor="name"
                 className="block text-sm font-medium text-gray-700"
+                data-aos="fade-up" data-aos-delay="500"
               >
                 Name
               </label>
@@ -77,7 +78,8 @@ function ContactSection({ title, description }) {
                 type="text"
                 placeholder="Shiny"
                 id="name"
-                className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2"
+                className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2" 
+                data-aos="fade-up" data-aos-delay="600"
               />
             </div>
 
@@ -85,6 +87,7 @@ function ContactSection({ title, description }) {
               <label
                 htmlFor="email"
                 className="block text-sm font-medium text-gray-700"
+                data-aos="fade-up" data-aos-delay="700"
               >
                 Email
               </label>
@@ -93,6 +96,7 @@ function ContactSection({ title, description }) {
                 placeholder="@Shiny.com"
                 id="email"
                 className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2"
+                data-aos="fade-up" data-aos-delay="800"
               />
             </div>
 
@@ -100,6 +104,7 @@ function ContactSection({ title, description }) {
               <label
                 htmlFor="message"
                 className="block text-sm font-medium text-gray-700"
+                data-aos="fade-up" data-aos-delay="900"
               >
                 Message
               </label>
@@ -107,6 +112,7 @@ function ContactSection({ title, description }) {
                 id="message"
                 rows="4"
                 className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2"
+                data-aos="fade-up" data-aos-delay="900"
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
               ></textarea>
@@ -115,6 +121,7 @@ function ContactSection({ title, description }) {
             <button
               type="submit"
               className="px-4 py-2 bg-green-500 text-white rounded-md hover:bg-green-700 transition-colors duration-300"
+              data-aos="fade-up" data-aos-delay="1000"
             >
               Send Message
             </button>
