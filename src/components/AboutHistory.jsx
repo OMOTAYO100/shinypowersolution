@@ -79,7 +79,7 @@ function AboutHistory({ title, subtitle, description }) {
           </div>
         </div>
 
-        {/* <div className=" flex items-center justify-center mt-8 space-x-4 md:space-x-20 bg-slate-100 text-green-500">
+        {/* <dinpm run devv className=" flex items-center justify-center mt-8 space-x-4 md:space-x-20 bg-slate-100 text-green-500">
           <p className="text-xl">Lithuim</p>
           <p className="text-xl">Lithuim</p>
           <p className="text-xl">Lithuim</p>
