@@ -19,15 +19,15 @@ function HeroSection({title, subtitle, }) {
   return (
     <>
       <section style={{backgroundImage: `url(${solarBg})`}} className=" max-h-fit bg-cover bg-center p-8 md:p-16 lg:p-20 space-y-12 flex flex-col justify-center font-Figtree">
-        <h1 className="text-4xl md:text-6xl font-bold text-center text-gray-200">
+        <h1 className="text-4xl md:text-6xl font-bold text-center text-gray-200" data-aos="zoom in" data-aos-delay="200">
           {title}
         </h1>
 
         <div className="space-y-8 flex flex-col justify-center items-center">
-          <h3 className=" text-green-500 text-xl sm:text-3xl md:text-4xl text-center font-semibold ">
+          <h3 className=" text-green-500 text-xl sm:text-3xl md:text-4xl text-center font-semibold" data-aos="fade-up" data-aos-delay="400">
             ⚡{currentWord} {subtitle}
           </h3>
-          <p className="text-center text-2xl sm:w-[60%] mx-auto text-white">
+          <p className="text-center text-2xl sm:w-[60%] mx-auto text-white" data-aos="fade-up" data-aos-delay="600">
             At <span className="font-semibold text-green-500">Shiny Power Solution</span>, we provide innovative and
             sustainable energy system that keeps your home and business running
             without interruptions. From Solar solutions to reliable backup
