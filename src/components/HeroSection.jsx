@@ -34,7 +34,7 @@ function HeroSection({title, subtitle, }) {
             power, we help you stay connected, productive and worry-free.
           </p>
 
-          <div className=" flex space-x-6 justify-self-center mt-10" data-aos="fade-up" data-aos-delay="800">
+          <div className=" flex space-x-6 justify-self-center mt-10" data-aos="fade-up" data-aos-delay="600">
             <button className=" bg-green-500 p-2 text-md text-white rounded cursor-pointer">
               Learn More {<GoArrowUpRight className="inline-block" />}
             </button>
