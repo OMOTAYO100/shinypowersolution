@@ -18,8 +18,8 @@ function HeroSection({title, subtitle, }) {
 
   return (
     <>
-      <section style={{backgroundImage: `url(${solarBg})`}} className=" h-screen bg-cover bg-center p-8 md:p-16 lg:p-20 space-y-12 flex flex-col justify-center font-Figtree">
-        <h1 className="text-3xl md:text-6xl font-bold text-center text-gray-200">
+      <section style={{backgroundImage: `url(${solarBg})`}} className=" max-h-fit bg-cover bg-center p-8 md:p-16 lg:p-20 space-y-12 flex flex-col justify-center font-Figtree">
+        <h1 className="text-4xl md:text-6xl font-bold text-center text-gray-200">
           {title}
         </h1>
 
