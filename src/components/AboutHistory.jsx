@@ -1,7 +1,7 @@
 import React from "react";
 import { GiSolarPower } from "react-icons/gi";
 import AboutHistoryCard from "../Cards/AboutHistoryCard";
-import AboutOffers from "../Cards/AboutOffers";
+
 import WorkProgress from "../components/WorkProgress"
 import AboutTeam from "../Cards/AboutTeam"
 import aboutData from "../data/TeamData";
@@ -88,7 +88,7 @@ function AboutHistory({ title, subtitle, description }) {
           <p className="text-xl">Lithuim</p>
         </div> */}
 
-        <AboutOffers />
+       
         <WorkProgress />
         
             {/* Team Section */}
@@ -109,12 +109,6 @@ function AboutHistory({ title, subtitle, description }) {
         </div>
       </section>
         
-       
-       
-       
-          
-
-         
       
       </div>
     </>
