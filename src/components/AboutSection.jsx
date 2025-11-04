@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import panelA from "../assets/solar-panel-image-A.jpg";
+import panelP from "../assets/solar-panel-image-P.jpg";
 import { GoArrowUpRight } from "react-icons/go";
 
 function AboutSection({ title, description }) {
@@ -14,7 +14,7 @@ function AboutSection({ title, description }) {
       </h3>
       <div className="flex flex-col sm:flex-row items-center gap-6 sm:*:size-2/4" data-aos="fade-up" data-aos-delay="400">
         <figure>
-          <img className="rounded h-[450px]" src={panelA} alt="" />
+          <img className="rounded max-h-screen w-full object-cover" src={panelP} alt="" />
         </figure>
         <div className="space-y-6">
          <div>
