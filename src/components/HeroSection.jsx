@@ -1,5 +1,5 @@
 import React from "react";
-import solarBg from "../assets/solar-panel-image-R.jpg"
+import solarBg from "../assets/solar-panel-image-T.jpg"
 import { useState, useEffect } from "react";
 import { GoArrowUpRight } from "react-icons/go";
 
@@ -18,16 +18,16 @@ function HeroSection({title, subtitle, }) {
 
   return (
     <>
-      <section style={{backgroundImage: `url(${solarBg})`}} className=" max-h-fit bg-cover bg-center p-8 md:p-16 lg:p-20 space-y-12 flex flex-col justify-center font-Figtree">
-        <h1 className="text-4xl md:text-6xl font-bold text-center text-gray-200" data-aos="zoom in" data-aos-delay="200">
+      <section style={{backgroundImage: `url(${solarBg})`}} className=" max-h-fit bg-cover bg-center p-8 md:p-16 lg:p-20 space-y-8 flex flex-col justify-center font-Lato">
+        <h1 className="text-4xl md:text-6xl font-bold text-center text-green-500" data-aos="zoom in" data-aos-delay="200">
           {title}
         </h1>
 
         <div className="space-y-8 flex flex-col justify-center items-center">
-          <h3 className=" text-green-500 text-xl sm:text-3xl md:text-4xl text-center font-semibold" data-aos="fade-up" data-aos-delay="400">
+          <h3 className="text-xl sm:text-3xl md:text-4xl text-center font-semibold text-white" data-aos="fade-up" data-aos-delay="400">
             ⚡{currentWord} {subtitle}
           </h3>
-          <p className="text-center text-2xl sm:w-[60%] mx-auto text-white" data-aos="fade-up" data-aos-delay="600">
+          <p className="text-center text-2xl sm:w-[60%] mx-auto font-semibold text-white" data-aos="fade-up" data-aos-delay="600">
             At <span className="font-semibold text-green-500">Shiny Power Solution</span>, we provide innovative and
             sustainable energy system that keeps your home and business running
             without interruptions. From Solar solutions to reliable backup
@@ -35,7 +35,7 @@ function HeroSection({title, subtitle, }) {
           </p>
 
           <div className=" flex space-x-6 justify-self-center mt-10" data-aos="fade-up" data-aos-delay="600">
-            <button className=" bg-green-500 p-2 text-md text-white rounded cursor-pointer">
+            <button className=" bg-green-500 p-2 text-md text-white rounded cursor-pointer hover:bg-lime-500 transition-all duration-300 font-semibold">
               Learn More {<GoArrowUpRight className="inline-block" />}
             </button>
             

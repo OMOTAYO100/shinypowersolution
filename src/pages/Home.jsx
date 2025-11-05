@@ -14,7 +14,7 @@ function Home() {
     <div>
       <NavbarSection />
       <HeroSection
-        title={`Welcome to Shiny Power Solution`}
+        title={`SHINY POWER SOLUTION`}
         subtitle={`Power supply for all`}
       />
       <AboutSection
