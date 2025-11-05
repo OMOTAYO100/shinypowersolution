@@ -2,7 +2,8 @@ import panelA from "../assets/solar-panel-image-A.jpg";
 import panelL from "../assets/solar-panel-image-L.jpg";
 import panelM from "../assets/solar-panel-image-M.jpg";
 import panelN from "../assets/solar-panel-image-N.jpg";
-import panelO from "../assets/solar-panel-image-O.jpg";
+import panelQ from "../assets/solar-panel-image-Q.jpg";
+import panelG from "../assets/solar-panel-image-G.jpg";
 
 export const projectsData = [
   {
@@ -32,13 +33,13 @@ export const projectsData = [
   {
     id: 5,
     title: "Solar Street Lighting",
-    image: panelO,
+    image: panelG,
     text : "Implementing solar-powered street lighting solutions to enhance urban sustainability."
   },
   {
     id: 6,
     title: "Smart Grid Integration",
-    image: panelN,
+    image: panelQ,
     text : "Integrating smart grid technology to enhance energy distribution and efficiency."
   },
 

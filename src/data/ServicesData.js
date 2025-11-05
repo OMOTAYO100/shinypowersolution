@@ -3,7 +3,7 @@ import {
   FaBatteryFull,
   FaLightbulb,
 } from "react-icons/fa";
-import React, { memo } from "react";
+import React from "react";
 import { GoArrowUpRight } from "react-icons/go";
 
 import panelC from "../assets/solar-panel-image-C.jpg";

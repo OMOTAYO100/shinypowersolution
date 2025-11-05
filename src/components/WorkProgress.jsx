@@ -6,7 +6,7 @@ import { PiSolarPanelLight } from "react-icons/pi";
 function WorkProgress() {
   return (
     <>
-   <div className="flex flex-col justify-center items-center gap-4 mt-4">
+   <div className="flex flex-col justify-center items-center gap-4 mt-12" data-aos="fade-up">
          <h4 className="text-xl font-Figtree font-semibold text-green-500" data-aos="fade-up">Simple steps to a sustainable future</h4>
          <h2 className="font-Lato text-4xl" data-aos="fade-up">Our Work Progress</h2>
       </div>
