@@ -13,14 +13,14 @@ const NavbarSection = () => {
 
   return (
     <>
-      <header className="  bg-black text-white relative p-8 md:p-12 lg:p-20 flex flex-col gap-4 lg:gap-y-12 font-lato">
+      <header className="  bg-black text-white relative p-8 md:p-6 flex flex-col gap-4 lg:gap-y-12 font-lato">
         <nav className="md:p-2 flex justify-between items-center">
           <div className=" flex items-center space-x-1">
             <img className="h-6 w-6 rounded-full" src={logo} alt="shiny logo" />
             <p className="text-lg font-semibold">SHIN<span className="text-green-500">Y</span></p>
           </div>
           <ul
-            className={` flex flex-col md:gap-2  bg-green-500/60 fixed rounded top-0 right-0 backdrop-blur-lg p-24  ${
+            className={` flex flex-col md:gap-2  bg-green-500/60 fixed rounded top-0 right-0 backdrop-blur-lg p-24 gap-4 ${
               isOpen ? "scale-y-100" : "scale-y-0 "
             } origin-top z-30 transition-transform duration-300 md:flex-row md:scale-y-100 md:backdrop-blur-0 md:static md:p-2 md:bg-transparent`}
           >
