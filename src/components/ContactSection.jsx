@@ -20,6 +20,7 @@ function ContactSection({ title, description }) {
               className="w-full h-[500px] object-cover shadow-lg rounded-lg"
               src={ContactImage}
               alt="contact-image"
+              loading="lazy"
             />
 
             <h2 className="absolute inset-0 flex items-start justify-center p-6 text-green-500 text-5xl md:text-4xl lg:text-5xl font-bold">

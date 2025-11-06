@@ -43,6 +43,7 @@ function BlogSection() {
                   src={post.image}
                   alt={post.title}
                   className="w-full h-40 object-cover mb-2 rounded-lg"
+                  loading="lazy"
                 />
               </figure>
               <h3 className="font-semibold text-lg mb-2" data-aos="fade-up">{post.title}</h3>

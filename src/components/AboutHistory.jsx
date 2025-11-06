@@ -83,10 +83,11 @@ function AboutHistory({ title, subtitle, description }) {
                 className="rounded max-h-screen w-full object-cover"
                 src={panelT}
                 alt="image"
+                loading="lazy"
               />
             </figure>
             <figure className="absolute bottom-8 hidden sm:block">
-              <img className="size-60 rounded-2xl" src={panelC} alt="image" />
+              <img className="size-60 rounded-2xl" src={panelC} alt="image" loading="lazy" />
             </figure>
           </div>
         </div>

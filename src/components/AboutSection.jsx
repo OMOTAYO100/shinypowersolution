@@ -30,6 +30,7 @@ function AboutSection({ title, description }) {
             className="rounded max-h-screen w-full object-cover"
             src={panelP}
             alt=""
+            loading="lazy"
           />
         </figure>
 

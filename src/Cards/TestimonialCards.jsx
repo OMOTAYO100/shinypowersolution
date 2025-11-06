@@ -16,7 +16,7 @@ function TestimonialCards({ name, description, Images }) {
              
      <div className="flex flex-col gap-4 mt-4">
         <figure>
-            <img className='size-16 rounded-full' src={Images} alt="" />
+            <img className='size-16 rounded-full' src={Images} alt="" loading="lazy" />
         </figure>
          <p className="font-semibold text-gray-400">{name}</p>
      </div>
