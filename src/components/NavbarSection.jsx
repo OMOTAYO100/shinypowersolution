@@ -90,7 +90,7 @@ const NavbarSection = () => {
 
           <div
             onClick={toggleMenu}
-            className={`hamburger md:hidden fixed bg-green-500 py-5 top-[30px] right-2/4 translate-x-2/4
+            className={`hamburger md:hidden fixed bg-green-500 py-5 top-[30px] right-8 
                   h-8 w-12 z-30 rounded cursor-pointer before:content-[''] before:h-0.5 before:w-2/3 before:bg-white before:absolute before:top-4 before:left-2 before:transition before:duration-300 before:rounded-full after:content-[''] after:h-0.5 after:w-2/3 after:bg-black after:absolute after:top-6 after:left-2 after:rounded-full after:transition after:duration-300 ${
                     isOpen
                       ? "before:rotate-45 before:translate-y-1 after:-rotate-45 after:-translate-y-1 after:bg-white"
