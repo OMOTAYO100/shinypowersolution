@@ -20,7 +20,7 @@ const NavbarSection = () => {
             <p className="text-lg font-semibold">SHIN<span className="text-green-500">Y</span></p>
           </div>
           <ul
-            className={` flex flex-col md:gap-2  bg-green-500/60 fixed rounded top-0 right-0 backdrop-blur-lg p-24 gap-4 ${
+            className={` flex flex-col md:gap-2  bg-green-500/60 fixed rounded top-0 right-0 backdrop-blur-lg p-24  ${
               isOpen ? "scale-y-100" : "scale-y-0 "
             } origin-top z-30 transition-transform duration-300 md:flex-row md:scale-y-100 md:backdrop-blur-0 md:static md:p-2 md:bg-transparent`}
           >
@@ -55,6 +55,14 @@ const NavbarSection = () => {
                 Services
               </Link>
             </li>
+            <li className="m-2 hover:scale-110 transition-transform duration-300 sm:hidden">
+              <Link 
+                to="/contact"
+                className="py-2 text-sm md:text-md lg:text-lg hover:text-md transition-all duration-300 hover:text-green-500"
+              >
+                Get Quote
+              </Link>
+            </li>
             <li className="m-2 hover:scale-110 transition-transform duration-300">
               <Link 
                 to="/contact"
@@ -77,10 +85,10 @@ const NavbarSection = () => {
               </Link></li>
 
               <li className="hover:scale-110 transition-transform duration-300"><Link
-                className=" py-2 md:px-4 rounded-2xl bg-green-500 text-black text-sm md:text-md lg:text-lg border hover:bg-green-600 hover:text-black transition-all duration-300 "
+                className=" py-2 md:px-4 rounded-2xl border-2 border-green-500 text-white text-sm md:text-md lg:text-lg hover:bg-green-600 hover:text-black transition-all duration-300 "
                 href="#"
               >
-                Contact {<GoArrowUpRight className="inline-block font-bold"  />}
+                Contact {<GoArrowUpRight className="inline-block font-bold" />}
               </Link></li>
               </ul>
               
