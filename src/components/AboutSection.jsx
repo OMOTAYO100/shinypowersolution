@@ -58,7 +58,7 @@ function AboutSection({ title, description }) {
           </div>
 
           <div
-            className="mt-6 border-2 border-green-500 w-fit mx-auto rounded-full p-2 hover:bg-green-500 hover:text-white transition-all duration-300"
+            className="mt-6 border-2 border-green-500 w-fit  rounded-full justify-start p-2 hover:bg-green-500 hover:text-white transition-all duration-300"
             data-aos="fade-up"
             data-aos-delay="900"
           >

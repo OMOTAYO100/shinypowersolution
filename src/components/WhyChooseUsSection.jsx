@@ -7,7 +7,7 @@ import CardsSection from "../Cards/WhyChooseUsCardsSection";
 
 function WhyChooseUsSection({ title }) {
   return (
-    <section className="p-6 md:p-16 lg:p-20 space-y-12 bg-slate-100 shadow-lg shadow-gray-600 font-Figtree" data-aos="fade-up" data-aos-delay="200">
+    <section className="p-6 md:p-16 lg:p-20 space-y-12 bg-slate-100 shadow-sm shadow-gray-600 font-Figtree" data-aos="fade-up" data-aos-delay="200">
       <h2 className="text-2xl sm:text-4xl text-center font-semibold" data-aos="fade-up" data-aos-delay="300">
         {title}
       </h2>
