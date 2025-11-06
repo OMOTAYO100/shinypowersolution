@@ -15,7 +15,7 @@ function Home() {
       <NavbarSection />
       <HeroSection
         title={`SHINY POWER SOLUTION`}
-        subtitle={`RELIABLE ENERGY FOR A SUSTAINABLE FUTURE`}
+        subtitle={`RELIABLE ENERGY FOR ALL`}
       />
       <AboutSection
         title={`About Shin`}
