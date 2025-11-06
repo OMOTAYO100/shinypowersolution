@@ -15,8 +15,8 @@ function TestimonialCards({ name, description, Images }) {
              <p className="text-gray-600">{description}</p>
              
      <div className="flex flex-col gap-4 mt-4">
-        <figure>
-            <img className='size-16 rounded-full' src={Images} alt="" loading="lazy" />
+        <figure className='w-full max-h-fit'>
+            <img className='rounded-xl' src={Images} alt="" loading="lazy" />
         </figure>
          <p className="font-semibold text-gray-400">{name}</p>
      </div>
