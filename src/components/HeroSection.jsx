@@ -44,7 +44,7 @@ function HeroSection({title, subtitle, }) {
           <p className="text-gray-400"><i>Top industries served</i></p>
         </div>
         <div className="flex items-center gap-1">
-          <p className="text-6xl font-bold text-green-500" data-aos="zoom in" data-aos-delay="700">12+</p>
+          <p className="text-6xl font-bold text-green-500" data-aos="zoom in" data-aos-delay="700">10+</p>
           <p className="text-gray-400"><i>Years Experience in the industry</i></p>
         </div>
       </div>
