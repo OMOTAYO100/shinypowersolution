@@ -17,6 +17,7 @@ const NavbarSection = () => {
         <nav className="md:p-2 flex justify-between items-center">
           <div className=" flex items-center space-x-1 cursor-pointer">
             <img className="h-8 w-8 rounded-full" src={logo} alt="shiny logo" />
+            <p className="text-lg font-semibold">SHIN<span className="text-green-500">Y</span></p>
           </div>
           <ul
             className={` flex flex-col md:gap-2  bg-green-500/60 fixed rounded top-0 right-0 backdrop-blur-lg p-24 gap-4 ${
