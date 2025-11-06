@@ -1,5 +1,10 @@
 import React from "react";
 import { GiSolarPower } from "react-icons/gi";
+import { FaAccusoft } from "react-icons/fa6";
+import { IoLayersOutline } from "react-icons/io5";
+import { MdOutlineSolarPower } from "react-icons/md";
+import { GiHypersonicBolt } from "react-icons/gi";
+import { SiJsonwebtokens } from "react-icons/si";
 import AboutHistoryCard from "../Cards/AboutHistoryCard";
 
 import WorkProgress from "../components/WorkProgress"
@@ -31,7 +36,7 @@ function AboutHistory({ title, subtitle, description }) {
 
   <AboutHistoryCard
     text="We provide cost-effective renewable energy solutions tailored to your budget."
-    icon={<GiSolarPower />}
+    icon={<FaAccusoft />}
     header="Affordable pricing"
     dataAos="fade-up"
     dataAosDelay="200"
@@ -39,32 +44,32 @@ function AboutHistory({ title, subtitle, description }) {
 
   <AboutHistoryCard
     text="We design and install efficient solar inverter systems for homes and businesses."
-    icon={<GiSolarPower />}
-    header="Solar inverter setup"
+    icon={<MdOutlineSolarPower />}
+    header="Energy Efficiency Solutions"
     dataAos="fade-up"
     dataAosDelay="300"
   />
 
   <AboutHistoryCard
     text="We design and install efficient solar inverter systems for homes and businesses."
-    icon={<GiSolarPower />}
-    header="Solar inverter setup"
+    icon={<GiHypersonicBolt />}
+    header="Battery Storage Installation"
     dataAos="fade-up"
     dataAosDelay="400"
   />
 
   <AboutHistoryCard
     text="We design and install efficient solar inverter systems for homes and businesses."
-    icon={<GiSolarPower />}
-    header="Solar inverter setup"
+    icon={<SiJsonwebtokens />}
+    header="Home & Business Electrification"
     dataAos="fade-up"
     dataAosDelay="500"
   />
 
   <AboutHistoryCard
     text="We design and install efficient solar inverter systems for homes and businesses."
-    icon={<GiSolarPower />}
-    header="Solar inverter setup"
+    icon={<IoLayersOutline />}
+    header="Sustainable Energy Consulting"
     dataAos="fade-up"
     dataAosDelay="600"
   />
