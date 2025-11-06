@@ -1,21 +1,8 @@
 import React from "react";
 import solarBg from "../assets/solar-panel-image-F.jpg"
-import { useState, useEffect } from "react";
 import { GoArrowUpRight } from "react-icons/go";
 
 function HeroSection({title, subtitle, }) {
- const words = ['Reliable', 'Sustainable', 'Affordable', 'Efficient']
- const [currentWord, setCurrentWord] = useState('Reliable');
-
- useEffect(() => {
-    const interval = setInterval(() => {
-      const randomIndex = Math.floor(Math.random() * words.length);
-      setCurrentWord(words[randomIndex]);
-    }, 5000);
-
-    return () => clearInterval(interval);
-  }, []);
-
   return (
     <>
       <section style={{backgroundImage: `url(${solarBg})`}} className=" max-h-fit bg-cover bg-center p-8 md:p-16 lg:p-20 space-y-8 flex flex-col justify-center font-Figtree">
@@ -24,8 +11,8 @@ function HeroSection({title, subtitle, }) {
         </h1>
 
         <div className="space-y-8 flex flex-col justify-center items-center">
-          <h3 className="text-2xl sm:text-3xl md:text-4xl text-center font-bold text-white " data-aos="fade-up" data-aos-delay="400">
-            ⚡{currentWord} {subtitle}
+          <h3 className="text-xl sm:text-3xl md:text-4xl text-center font-bold text-white " data-aos="fade-up" data-aos-delay="400">
+            {subtitle}
           </h3>
           <p className="text-center text-2xl sm:w-[60%] mx-auto font-semibold text-white" data-aos="fade-up" data-aos-delay="500">
             At <span className="font-semibold text-green-500">Shiny Power Solution</span>, we provide innovative and
