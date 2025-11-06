@@ -85,7 +85,7 @@ const NavbarSection = () => {
               </Link></li>
 
               <li className="hover:scale-110 transition-transform duration-300"><Link
-                className=" py-2 md:px-4 rounded-2xl border-2 border-green-500 text-white text-sm md:text-md lg:text-lg hover:bg-green-600 hover:text-black transition-all duration-300 "
+                className=" py-2 md:px-4 rounded-2xl border-2 border-green-500 text-green-500 text-sm md:text-md lg:text-lg hover:bg-green-600 hover:text-black transition-all duration-300 "
                 href="#"
               >
                 Contact {<GoArrowUpRight className="inline-block font-bold" />}
