@@ -1,5 +1,5 @@
 import React from "react";
-import solarBg from "../assets/solar-panel-image-D.jpg"
+import solarBg from "../assets/solar-panel-image-E.jpg"
 import { useState, useEffect } from "react";
 import { GoArrowUpRight } from "react-icons/go";
 
