@@ -18,13 +18,13 @@ function HeroSection({title, subtitle, }) {
 
   return (
     <>
-      <section style={{backgroundImage: `url(${solarBg})`}} className=" max-h-fit bg-cover bg-center p-8 md:p-16 lg:p-20 space-y-8 flex flex-col justify-center font-Lato">
-        <h1 className="text-4xl md:text-6xl font-bold text-center text-green-500" data-aos="zoom in" data-aos-delay="200">
+      <section style={{backgroundImage: `url(${solarBg})`}} className=" max-h-fit bg-cover bg-center p-8 md:p-16 lg:p-20 space-y-8 flex flex-col justify-center font-Figtree">
+        <h1 className="text-4xl md:text-6xl font-bold text-center text-green-500 font-Lato" data-aos="zoom in" data-aos-delay="200">
           {title}
         </h1>
 
         <div className="space-y-8 flex flex-col justify-center items-center">
-          <h3 className="text-xl sm:text-3xl md:text-4xl text-center font-semibold text-white" data-aos="fade-up" data-aos-delay="400">
+          <h3 className="text-xl sm:text-3xl md:text-4xl text-center font-bold text-white " data-aos="fade-up" data-aos-delay="400">
             ⚡{currentWord} {subtitle}
           </h3>
           <p className="text-center text-2xl sm:w-[60%] mx-auto font-semibold text-white" data-aos="fade-up" data-aos-delay="600">
