@@ -27,14 +27,14 @@ function HeroSection({title, subtitle, }) {
           <h3 className="text-2xl sm:text-3xl md:text-4xl text-center font-bold text-white " data-aos="fade-up" data-aos-delay="400">
             ⚡{currentWord} {subtitle}
           </h3>
-          <p className="text-center text-2xl sm:w-[60%] mx-auto font-semibold text-white" data-aos="fade-up" data-aos-delay="600">
+          <p className="text-center text-2xl sm:w-[60%] mx-auto font-semibold text-white" data-aos="fade-up" data-aos-delay="500">
             At <span className="font-semibold text-green-500">Shiny Power Solution</span>, we provide innovative and
             sustainable energy system that keeps your home and business running
             without interruptions. From Solar solutions to reliable backup
             power, we help you stay connected, productive and worry-free.
           </p>
 
-          <div className=" flex space-x-6 justify-self-center mt-10" data-aos="fade-up" data-aos-delay="600">
+          <div className=" flex space-x-6 justify-self-center mt-10" data-aos="fade-up" data-aos-delay="500">
             <button className=" bg-green-500 p-2 text-md text-white rounded cursor-pointer hover:bg-lime-500 transition-all duration-300 font-semibold">
               Learn More {<GoArrowUpRight className="inline-block" />}
             </button>
