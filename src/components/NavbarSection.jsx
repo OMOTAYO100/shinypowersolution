@@ -2,10 +2,12 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import logo from "../assets/shiny-logo.jpg";
+import { useNavigate } from "react-router-dom";
 import { GoArrowUpRight } from "react-icons/go";
 
 
 const NavbarSection = () => {
+  const navigate = useNavigate();
   const [isOpen, setIsOpen] = useState(false);
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -15,8 +17,8 @@ const NavbarSection = () => {
     <>
       <header className="  bg-black text-white relative p-8 md:p-6 flex flex-col gap-4 lg:gap-y-12 font-lato">
         <nav className="md:p-2 flex justify-between items-center">
-          <div className=" flex items-center space-x-1 cursor-pointer">
-            <img className="h-8 w-8 rounded-full" src={logo} alt="shiny logo" />
+          <div className=" flex items-center space-x-1 cursor-pointer" onClick={() => navigate("/")}>
+            <img className="h-8 w-8 rounded-full" src={logo} alt="shiny logo"  />
             <p className="text-lg font-semibold">SHIN<span className="text-green-500">Y</span></p>
           </div>
           <ul
