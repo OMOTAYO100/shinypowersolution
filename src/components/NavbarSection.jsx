@@ -4,9 +4,11 @@ import { useState } from "react";
 import logo from "../assets/shiny-logo.jpg";
 import { useNavigate } from "react-router-dom";
 import { GoArrowUpRight } from "react-icons/go";
+import PopupModal from "./PopupModal";
 
 
 const NavbarSection = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const navigate = useNavigate();
   const [isOpen, setIsOpen] = useState(false);
   const toggleMenu = () => {
@@ -59,8 +61,8 @@ const NavbarSection = () => {
             </li>
             <li className="m-2 hover:scale-110 transition-transform duration-300 sm:hidden">
               <Link 
-                to="/contact"
                 className="py-2 text-sm md:text-md lg:text-lg hover:text-md transition-all duration-300 hover:text-green-500"
+                onClick={()=> setIsModalOpen(true)}
               >
                 Get Quote
               </Link>
@@ -81,7 +83,7 @@ const NavbarSection = () => {
               <ul className="flex space-x-2">
                 <li className="hover:scale-110 transition-transform duration-300"><Link
                 className="py-2 md:px-4 rounded-2xl bg-green-500 text-black text-sm md:text-md lg:text-lg border hover:bg-green-600 hover:text-black transition-all duration-300"
-                href="#"
+                href="#" onClick={()=> setIsModalOpen(true)}
               >
                 Get Quote {<GoArrowUpRight className="inline-block" />}
               </Link></li>
@@ -92,11 +94,37 @@ const NavbarSection = () => {
               >
                 Contact {<GoArrowUpRight className="inline-block font-bold" />}
               </Link></li>
-              </ul>
-              
-              
+              </ul>              
             
           </div>
+            <PopupModal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+        title="Get a Quote"
+      >
+        <p className="text-white">
+          Fill out your details below and we will get back to you with a quote.
+        </p>
+        <form className="flex flex-col gap-4 mt-4">
+  <input type="text" placeholder="Full Name" required className="border px-3 py-2 rounded" />
+  <input type="email" placeholder="Email Address" required className="border px-3 py-2 rounded" />
+  <input type="tel" placeholder="Phone Number" className="border px-3 py-2 rounded" />
+  
+  <select className="border px-3 py-2 rounded">
+    <option value="" className="text-gray-500">Select Project Type</option>
+    <option>Residential</option>
+    <option>Commercial</option>
+    <option>Industrial</option>
+  </select>
+
+  <textarea placeholder="Project Details / Notes" className="border px-3 py-2 rounded"></textarea>
+
+  <button type="submit" className="bg-green-500 text-white py-2 rounded hover:bg-green-600 transition">
+    Get My Quote
+  </button>
+</form>
+
+      </PopupModal>
 
           <div
             onClick={toggleMenu}
