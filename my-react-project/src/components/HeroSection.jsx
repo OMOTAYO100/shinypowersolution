@@ -43,13 +43,13 @@ function HeroSection({ title, subtitle }) {
         <div className="absolute inset-0 bg-black/40 -z-10" />
 
         {/* Large Background Text */}
-        <div className="mt-8 absolute inset-0 flex justify-center items-start pt-20 md:pt-12 pointer-events-none select-none overflow-hidden -z-5">
-           <h1 className="text-[8.5vw] md:text-[130px] font-black text-[#A68F73]/30 uppercase whitespace-nowrap leading-none tracking-tighter">
+        <div className="mt-8 md:mt-18 absolute inset-0 flex justify-center items-start pt-20 md:pt-12 pointer-events-none select-none overflow-hidden -z-5">
+           <h1 className="text-[8.5vw] md:text-[130px] font-black text-[#A68F73]/60 uppercase whitespace-nowrap leading-none tracking-tighter">
              {title}
            </h1>
         </div>
 
-        <div className="mt-36 relative z-10 px-8 md:px-16 lg:px-24 space-y-10 flex flex-col justify-center items-start text-left max-w-7xl w-full">
+        <div className="mt-36 md:mt-60 relative z-10 px-8 md:px-16 lg:px-24 space-y-10 flex flex-col justify-center items-start text-left max-w-7xl w-full">
           <motion.h2 
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
