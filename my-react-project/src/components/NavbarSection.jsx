@@ -215,7 +215,7 @@ const NavbarSection = () => {
       </PopupModal>
 
           {/* Mobile Admin/Cart Icons before Hamburger */}
-          <div className="md:hidden absolute top-[30px] right-24 flex items-center space-x-4 z-30">
+          <div className="md:hidden fixed top-[30px] right-24 flex items-center space-x-4 z-30">
             <Link to="/admin" className="text-green-500 hover:text-green-600 transition" title="Admin Login">
               <FaUserShield size={35} />
             </Link>
@@ -223,7 +223,7 @@ const NavbarSection = () => {
               <div onClick={toggleCart} className="text-green-500 hover:text-green-600 transition relative cursor-pointer" title="Shopping Cart">
                 <FaShoppingCart size={35} />
                 {cartItems.length > 0 && (
-                  <span className="fixed -top-2 -right-2 bg-red-500 text-white text-[10px] font-bold rounded-full h-4 w-4 flex items-center justify-center">
+                  <span className="absolute -top-2 -right-2 bg-red-500 text-white text-[10px] font-bold rounded-full h-4 w-4 flex items-center justify-center">
                     {cartItems.length}
                   </span>
                 )}
