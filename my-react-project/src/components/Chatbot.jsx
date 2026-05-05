@@ -69,7 +69,7 @@ function Chatbot() {
           repeat: Infinity,
           ease: "easeInOut"
         }}
-        className={`fixed bottom-6 right-6 p-4 bg-green-600 text-white rounded-full shadow-xl hover:bg-green-700 hover:scale-110 transition-all duration-300 z-40 ${isOpen ? 'scale-0 opacity-0 pointer-events-none' : 'scale-100 opacity-100'}`}
+        className={`fixed bottom-6 right-6 p-4 bg-green-600 text-white rounded-full shadow-xl hover:bg-green-700 hover:scale-110 transition-all duration-300 z-40 animate-bounce ${isOpen ? 'scale-0 opacity-0 pointer-events-none' : 'scale-100 opacity-100'}`}
       >
         <FaRobot size={24} />
       </motion.button>

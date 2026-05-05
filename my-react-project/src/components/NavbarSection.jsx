@@ -22,7 +22,7 @@ const NavbarSection = () => {
 
   return (
     <>
-      <header className="  bg-black text-white relative p-8 md:p-6 flex flex-col gap-4 lg:gap-y-12 font-lato">
+      <header className="fixed top-0 left-0 w-full bg-black/90 backdrop-blur-md text-white z-50 p-6 md:p-4 flex flex-col gap-4 font-lato transition-all duration-300">
         <nav className="md:p-2 flex justify-between items-center">
           <div className=" flex items-center space-x-1 cursor-pointer" onClick={() => navigate("/")}>
             <img className="h-8 w-12 rounded-full" src={logo} alt="shiny logo"  />
