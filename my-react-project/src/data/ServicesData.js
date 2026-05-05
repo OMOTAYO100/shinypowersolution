@@ -8,7 +8,7 @@ import { GoArrowUpRight } from "react-icons/go";
 
 import panelC from "../assets/solar-panel-image-C.jpg";
 import panelE from "../assets/solar-panel-image-E.jpg";
-import panelF from "../assets/solar-panel-image.jpg";
+import panelF from "../assets/solar-panel-image.webp";
 
 
 

@@ -29,7 +29,7 @@ function AboutSection({ title, description }) {
           <img
             className="rounded max-h-screen w-full object-cover"
             src={panelP}
-            alt=""
+            alt="Shiny Power Solution Solar Panel Installation"
             loading="lazy"
           />
         </figure>
