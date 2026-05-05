@@ -1,6 +1,6 @@
 import React from 'react'
 import NavbarSection from '../components/NavbarSection'
-import SolarStoreSection from '../components/SolarstoreSection'
+import SolarStoreSection from '../components/SolarStoreSection'
 import  ContactSection from '../components/ContactSection'
 
 function Store() {
