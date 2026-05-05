@@ -29,7 +29,7 @@ const NavbarSection = () => {
             <p className="text-lg font-semibold">SHIN<span className="text-green-500">Y</span></p>
           </div>
           <ul
-            className={` flex flex-col md:gap-2  bg-green-500/60 fixed rounded top-0 right-0 backdrop-blur-lg p-24 gap-4 ${
+            className={` flex flex-col md:gap-2  bg-white/95 text-green-500 font-semibold fixed rounded top-0 right-0 backdrop-blur-lg p-24 gap-4 ${
               isOpen ? "scale-y-100" : "scale-y-0 "
             } origin-top z-30 transition-transform duration-300 md:flex-row md:scale-y-100 md:backdrop-blur-0 md:static md:p-2 md:bg-transparent`}
           >
@@ -235,7 +235,7 @@ const NavbarSection = () => {
             {/* Hamburger inside the flex flow */}
             <div
               onClick={toggleMenu}
-              className={`hamburger relative bg-green-500 h-8 w-12 rounded cursor-pointer flex flex-col items-center justify-center gap-1 transition-all duration-300 ${isOpen ? "bg-red-500" : ""}`}
+              className={`hamburger relative bg-green-500 h-8 w-12 rounded cursor-pointer flex flex-col items-center justify-center gap-1 transition-all duration-300 ${isOpen ? "bg-green-500" : ""}`}
             >
               <span className={`block h-0.5 w-8 bg-white transition-all duration-300 ${isOpen ? "rotate-45 translate-y-1.5" : ""}`}></span>
               <span className={`block h-0.5 w-8 bg-black transition-all duration-300 ${isOpen ? "opacity-0" : ""}`}></span>

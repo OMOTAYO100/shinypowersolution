@@ -55,7 +55,8 @@ function SolarStoreSection() {
                 <div className="relative">
                    <img
                      src={product.image}
-                     alt={product.name}
+                     alt={`${product.name} - Solar Energy Product by Shiny Power Solution`}
+                     loading="lazy"
                      className="w-full h-48 object-cover"
                    />
                    <span className="absolute top-3 right-3 bg-white/90 backdrop-blur-sm text-green-700 text-xs font-bold px-3 py-1 rounded-full shadow-sm">

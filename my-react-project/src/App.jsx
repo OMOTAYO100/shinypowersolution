@@ -1,9 +1,9 @@
-import { Suspense, lazy, useEffect } from "react";
+import { useEffect, Suspense, lazy } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-// Lazy load components for faster initial load
+// Optimized Route Loading
 const Home = lazy(() => import("./pages/Home"));
 const About = lazy(() => import("./pages/About"));
 const Services = lazy(() => import("./pages/Services"));
@@ -30,7 +30,7 @@ const App = () => {
       <Router>
         <CartSidebar />
         <Chatbot />
-        <Suspense fallback={<div className="flex items-center justify-center h-screen bg-black text-green-500 font-bold">Loading...</div>}>
+        <Suspense fallback={<div className="h-screen w-full bg-black flex items-center justify-center text-green-500 font-bold text-xl animate-pulse">SHINY POWER...</div>}>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />

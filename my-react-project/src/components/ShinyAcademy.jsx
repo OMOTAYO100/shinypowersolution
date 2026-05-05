@@ -15,7 +15,7 @@ function ShinyAcademy() {
             About The Academy
           </h3>
 
-          <h1 className="w-full text-3xl sm:text-[70px] font-bold sm:leading-[70px] font-lato dark:text-gray-100 transition-colors duration-300">
+          <h1 className="w-full text-3xl sm:text-[70px] font-bold sm:leading-[70px] font-lato text-gray-400 md:text-black transition-colors duration-300">
             Practical Skills That{" "}
             <span className="text-[#008c4a] dark:text-[#00C96B]">Actually Get You Hired</span>
           </h1>
