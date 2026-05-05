@@ -32,7 +32,7 @@ const subject = useRef();
 
     try {
       // 1. Save to Database
-      const API_URL = import.meta.env.VITE_API_URL || "http://localhost:5000";
+      const API_URL = import.meta.env.VITE_API_URL || (window.location.hostname === "localhost" ? "http://localhost:5000" : window.location.origin);
       const response = await fetch(`${API_URL}/api/contact`, {
         method: "POST",
         headers: {

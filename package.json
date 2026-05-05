@@ -2,7 +2,7 @@
   "name": "shiny-power-solution-fullstack",
   "version": "1.0.0",
   "scripts": {
-    "install-all": "npm install --prefix backend && npm install --prefix my-react-project",
+    "install-all": "npm install --prefix backend && npm install --include=dev --prefix my-react-project",
     "build": "npm run install-all && npm run build --prefix my-react-project",
     "start": "npm start --prefix backend"
   }
