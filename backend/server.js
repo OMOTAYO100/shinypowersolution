@@ -36,7 +36,7 @@ app.use('/api/contact', contactRoutes);
 if (process.env.NODE_ENV === 'production') {
   app.use(express.static(path.join(__dirname, '../my-react-project/dist')));
 
-  app.get('(.*)', (req, res) => {
+  app.use((req, res) => {
     res.sendFile(path.join(__dirname, '../my-react-project/dist', 'index.html'));
   });
 }
