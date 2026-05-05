@@ -216,7 +216,7 @@ const NavbarSection = () => {
 
 
           {/* Mobile Admin/Cart Icons & Hamburger */}
-          <div className="md:hidden flex items-center gap-6">
+          <div className="md:hidden flex items-center gap-6 relative z-50">
             <Link to="/admin" className="text-green-500 hover:text-green-600 transition" title="Admin Login">
               <FaUserShield size={30} />
             </Link>
