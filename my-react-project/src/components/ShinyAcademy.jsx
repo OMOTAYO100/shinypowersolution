@@ -1,5 +1,5 @@
 import React from 'react'
-import AboutImg from '../assets/about-image.webp'
+import AboutImg from '../assets/About-image.webp'
 import { motion } from 'framer-motion'
 function ShinyAcademy() {
   return (
