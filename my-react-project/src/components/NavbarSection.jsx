@@ -214,14 +214,16 @@ const NavbarSection = () => {
 
       </PopupModal>
 
-          {/* Mobile Admin/Cart Icons before Hamburger */}
-          <div className="md:hidden fixed top-[30px] right-24 flex items-center space-x-4 z-30">
+
+          {/* Mobile Admin/Cart Icons & Hamburger */}
+          <div className="md:hidden flex items-center gap-6">
             <Link to="/admin" className="text-green-500 hover:text-green-600 transition" title="Admin Login">
-              <FaUserShield size={35} />
+              <FaUserShield size={30} />
             </Link>
+            
             {location.pathname === "/store" && (
               <div onClick={toggleCart} className="text-green-500 hover:text-green-600 transition relative cursor-pointer" title="Shopping Cart">
-                <FaShoppingCart size={35} />
+                <FaShoppingCart size={30} />
                 {cartItems.length > 0 && (
                   <span className="absolute -top-2 -right-2 bg-red-500 text-white text-[10px] font-bold rounded-full h-4 w-4 flex items-center justify-center">
                     {cartItems.length}
@@ -229,17 +231,18 @@ const NavbarSection = () => {
                 )}
               </div>
             )}
+
+            {/* Hamburger inside the flex flow */}
+            <div
+              onClick={toggleMenu}
+              className={`hamburger relative bg-green-500 h-8 w-12 rounded cursor-pointer flex flex-col items-center justify-center gap-1 transition-all duration-300 ${isOpen ? "bg-red-500" : ""}`}
+            >
+              <span className={`block h-0.5 w-8 bg-white transition-all duration-300 ${isOpen ? "rotate-45 translate-y-1.5" : ""}`}></span>
+              <span className={`block h-0.5 w-8 bg-black transition-all duration-300 ${isOpen ? "opacity-0" : ""}`}></span>
+              <span className={`block h-0.5 w-8 bg-white transition-all duration-300 ${isOpen ? "-rotate-45 -translate-y-1.5" : ""}`}></span>
+            </div>
           </div>
 
-          <div
-            onClick={toggleMenu}
-            className={`hamburger md:hidden fixed bg-green-500 py-5 top-[30px] right-8 
-                  h-8 w-12 z-30 rounded cursor-pointer before:content-[''] before:h-0.5 before:w-2/3 before:bg-white before:absolute before:top-4 before:left-2 before:transition before:duration-300 before:rounded-full after:content-[''] after:h-0.5 after:w-2/3 after:bg-black after:absolute after:top-6 after:left-2 after:rounded-full after:transition after:duration-300 ${
-                    isOpen
-                      ? "before:rotate-45 before:translate-y-1 after:-rotate-45 after:-translate-y-1 after:bg-white"
-                      : ""
-                  } `}
-          ></div>
         </nav>
       </header>
     </>
