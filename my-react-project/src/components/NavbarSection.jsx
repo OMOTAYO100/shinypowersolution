@@ -223,7 +223,7 @@ const NavbarSection = () => {
               <div onClick={toggleCart} className="text-green-500 hover:text-green-600 transition relative cursor-pointer" title="Shopping Cart">
                 <FaShoppingCart size={35} />
                 {cartItems.length > 0 && (
-                  <span className="absolute -top-2 -right-2 bg-red-500 text-white text-[10px] font-bold rounded-full h-4 w-4 flex items-center justify-center">
+                  <span className="fixed -top-2 -right-2 bg-red-500 text-white text-[10px] font-bold rounded-full h-4 w-4 flex items-center justify-center">
                     {cartItems.length}
                   </span>
                 )}
