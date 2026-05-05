@@ -1,0 +1,46 @@
+import panelA from "../assets/ShinypanelA.jpeg";
+import panelB from "../assets/ShinypanelB.jpeg";
+import panelC from "../assets/ShinypanelC.jpeg";
+import panelD from "../assets/ShinypanelD.jpeg";
+import panelQ from "../assets/solar-panel-image-Q.jpg";
+import panelG from "../assets/solar-panel-image-G.jpg";
+
+export const projectsData = [
+  {
+    id: 1,
+    title: "Modern Solar Installation",
+    image: panelA,
+    text: "A state-of-the-art solar panel installation for a residential property, showcasing sleek design and high efficiency."
+  },
+  {
+    id: 2,
+    title: "Industrial Management",
+    image: panelB,
+    text: "An innovative approach to managing industrial waste, focusing on recycling and sustainability."
+  },
+  {
+    id: 3,
+    title: "Community Energy",
+    image: panelC,
+    text: "A community-driven initiative to promote renewable energy sources and reduce carbon footprints."
+  },
+  {
+    id: 4,
+    title: "Intelligent Power Management",
+    image: panelD,
+    text: "Advanced systems designed to monitor, control, and optimize your energy flow."
+  },
+  {
+    id: 5,
+    title: "Solar Street Lighting",
+    image: panelG,
+    text : "Implementing solar-powered street lighting solutions to enhance urban sustainability."
+  },
+  {
+    id: 6,
+    title: "Smart Grid Integration",
+    image: panelQ,
+    text : "Integrating smart grid technology to enhance energy distribution and efficiency."
+  },
+
+];
