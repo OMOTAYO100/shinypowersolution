@@ -1,6 +1,6 @@
-import SolarJ from "../assets/solar-panel-image-J.jpg";
+import SolarJ from "../assets/solar-panel-image-J.webp";
 import SolarD from "../assets/solar-panel-image-D.jpg";
-import SolarK from "../assets/solar-panel-image-K.jpg";
+import SolarK from "../assets/solar-panel-image-K.webp";
 export const solarNewsData = [
   {
     id: 1,

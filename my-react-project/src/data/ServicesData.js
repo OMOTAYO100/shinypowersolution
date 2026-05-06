@@ -6,9 +6,9 @@ import {
 import React from "react";
 import { GoArrowUpRight } from "react-icons/go";
 
-import panelC from "../assets/solar-panel-image-C.jpg";
+import panelC from "../assets/solar-panel-image-C.webp";
 import panelE from "../assets/solar-panel-image-E.jpg";
-import panelF from "../assets/solar-panel-image.webp";
+import panelF from "../assets/solar-panel-image (1).webp";
 
 
 

@@ -1,8 +1,8 @@
 import React from 'react'
 import TestimonialCards from '../Cards/TestimonialCards.jsx'
-import TestimonialA from '../assets/testimonial-A.jpg';
-import TestimonialB from '../assets/testimonial-B.jpg';
-import TestimonialC from '../assets/testimonial-C.jpg';
+import TestimonialA from '../assets/testimonial-A.webp';
+import TestimonialB from '../assets/testimonial-B.webp';
+import TestimonialC from '../assets/testimonial-C.webp';
 
 function TestimonialSection({ title, description}) {
   return (
