@@ -34,7 +34,7 @@ function ShinyAcademy() {
           </p>
 
           <a
-            href="#"
+            href="https://shinypoweracademy.com/" target="_blank" rel="noopener noreferrer"
             className="bg-[#00A859] text-white py-2 px-4 rounded-full hover:bg-[#008c4a] transition duration-300"
           >
             Explore the Curriculum
