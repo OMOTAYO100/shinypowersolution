@@ -136,14 +136,44 @@ const NavbarSection = () => {
                 Contact {<GoArrowUpRight className="inline-block font-bold" />}
               </Link></li>
               </ul>
-            
           </div>
-            <PopupModal
+            
+
+          {/* Mobile Admin/Cart Icons & Hamburger */}
+          <div className="md:hidden flex items-center gap-6 relative z-50">
+            <Link to="/admin" className="text-green-500 hover:text-green-600 transition" title="Admin Login">
+              <FaUserShield size={30} />
+            </Link>
+            
+            {location.pathname === "/store" && (
+              <div onClick={toggleCart} className="text-green-500 hover:text-green-600 transition relative cursor-pointer" title="Shopping Cart">
+                <FaShoppingCart size={30} />
+                {cartItems.length > 0 && (
+                  <span className="absolute -top-2 -right-2 bg-red-500 text-white text-[10px] font-bold rounded-full h-4 w-4 flex items-center justify-center">
+                    {cartItems.length}
+                  </span>
+                )}
+              </div>
+            )}
+
+            {/* Hamburger inside the flex flow */}
+            <div
+              onClick={toggleMenu}
+              className={`hamburger relative bg-green-500 h-8 w-12 rounded cursor-pointer flex flex-col items-center justify-center gap-1 transition-all duration-300 ${isOpen ? "bg-green-500" : ""}`}
+            >
+              <span className={`block h-0.5 w-8 bg-white transition-all duration-300 ${isOpen ? "rotate-45 translate-y-1.5" : ""}`}></span>
+              <span className={`block h-0.5 w-8 bg-black transition-all duration-300 ${isOpen ? "opacity-0" : ""}`}></span>
+              <span className={`block h-0.5 w-8 bg-white transition-all duration-300 ${isOpen ? "-rotate-45 -translate-y-1.5" : ""}`}></span>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <PopupModal
         isOpen={isModalOpen}
         onClose={() => setIsModalOpen(false)}
         title="Get a Quote"
       >
-        <p className="text-white">
+        <p className="text-gray-600">
           Fill out your details below and we will get back to you with a quote.
         </p>
         <form 
@@ -194,57 +224,25 @@ const NavbarSection = () => {
             }
           }}
         >
-          <input name="name" type="text" placeholder="Full Name" required className="border px-3 py-2 rounded text-black" />
-          <input name="email" type="email" placeholder="Email Address" required className="border px-3 py-2 rounded text-black" />
-          <input name="phone" type="tel" placeholder="Phone Number" className="border px-3 py-2 rounded text-black" />
+          <input name="name" type="text" placeholder="Full Name" required className="border border-gray-200 px-4 py-3 rounded-xl text-black focus:outline-none focus:ring-2 focus:ring-green-500 transition-all bg-gray-50" />
+          <input name="email" type="email" placeholder="Email Address" required className="border border-gray-200 px-4 py-3 rounded-xl text-black focus:outline-none focus:ring-2 focus:ring-green-500 transition-all bg-gray-50" />
+          <input name="phone" type="tel" placeholder="Phone Number" className="border border-gray-200 px-4 py-3 rounded-xl text-black focus:outline-none focus:ring-2 focus:ring-green-500 transition-all bg-gray-50" />
           
-          <select name="projectType" className="border px-3 py-2 rounded text-black">
+          <select name="projectType" className="border border-gray-200 px-4 py-3 rounded-xl text-black focus:outline-none focus:ring-2 focus:ring-green-500 transition-all bg-gray-50">
             <option value="" className="text-gray-500">Select Project Type</option>
             <option>Residential</option>
             <option>Commercial</option>
             <option>Industrial</option>
           </select>
 
-          <textarea name="details" placeholder="Project Details / Notes" className="border px-3 py-2 rounded text-black"></textarea>
+          <textarea name="details" placeholder="Project Details / Notes" className="border border-gray-200 px-4 py-3 rounded-xl text-black focus:outline-none focus:ring-2 focus:ring-green-500 transition-all bg-gray-50 h-32"></textarea>
 
-          <button type="submit" className="bg-green-500 text-white py-2 rounded hover:bg-green-600 transition">
+          <button type="submit" className="bg-green-600 text-white py-3 rounded-xl font-bold hover:bg-green-700 active:scale-95 transition-all shadow-lg shadow-green-600/20">
             Get My Quote
           </button>
         </form>
 
       </PopupModal>
-
-
-          {/* Mobile Admin/Cart Icons & Hamburger */}
-          <div className="md:hidden flex items-center gap-6 relative z-50">
-            <Link to="/admin" className="text-green-500 hover:text-green-600 transition" title="Admin Login">
-              <FaUserShield size={30} />
-            </Link>
-            
-            {location.pathname === "/store" && (
-              <div onClick={toggleCart} className="text-green-500 hover:text-green-600 transition relative cursor-pointer" title="Shopping Cart">
-                <FaShoppingCart size={30} />
-                {cartItems.length > 0 && (
-                  <span className="absolute -top-2 -right-2 bg-red-500 text-white text-[10px] font-bold rounded-full h-4 w-4 flex items-center justify-center">
-                    {cartItems.length}
-                  </span>
-                )}
-              </div>
-            )}
-
-            {/* Hamburger inside the flex flow */}
-            <div
-              onClick={toggleMenu}
-              className={`hamburger relative bg-green-500 h-8 w-12 rounded cursor-pointer flex flex-col items-center justify-center gap-1 transition-all duration-300 ${isOpen ? "bg-green-500" : ""}`}
-            >
-              <span className={`block h-0.5 w-8 bg-white transition-all duration-300 ${isOpen ? "rotate-45 translate-y-1.5" : ""}`}></span>
-              <span className={`block h-0.5 w-8 bg-black transition-all duration-300 ${isOpen ? "opacity-0" : ""}`}></span>
-              <span className={`block h-0.5 w-8 bg-white transition-all duration-300 ${isOpen ? "-rotate-45 -translate-y-1.5" : ""}`}></span>
-            </div>
-          </div>
-
-        </nav>
-      </header>
     </>
   );
 };
