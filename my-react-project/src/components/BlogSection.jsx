@@ -17,7 +17,7 @@ function BlogSection() {
 
       <div className="flex flex-col md:flex-row space-y-6 md:space-y-0 justify-between" >
       
-       <Link to="/blog" className="self-center text-green-600 font-medium mb-8 inline-block bg-slate-100 p-2 rounded-xl hover:bg-green-600 hover:text-white transition-all duration-300" data-aos="fade-up" data-aos-delay="400">  
+       <Link to="/" className="self-center text-green-600 font-medium mb-8 inline-block bg-slate-100 p-2 rounded-xl hover:bg-green-600 hover:text-white transition-all duration-300" data-aos="fade-up" data-aos-delay="400">  
         View All Articles
       </Link>
 

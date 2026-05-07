@@ -12,7 +12,7 @@ function ProjectSection({ title, description, limit }) {
     ? projectsData.slice(0, limit)
     : projectsData;
   return (
-    <section className="p-8 md:p-16 lg:p-20 bg-slate-100 flex flex-col gap-12">
+    <section className="p-8 md:p-16 lg:p-20 bg-slate-100 flex flex-col gap-12 mt-12" data-aos="fade-up" data-aos-delay="200">
       <div className=" flex flex-col md:flex-row space-y-8  p-2 justify-between mb-6">
         <div>
           <h2 className="text-xl font-bold" data-aos="fade-up">{title}</h2>
@@ -25,7 +25,7 @@ function ProjectSection({ title, description, limit }) {
         </div>
       </div>
 
-       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 ">
         {displayedProjects.map((project, index) => (
           <ProjectCards
             key={project.id}

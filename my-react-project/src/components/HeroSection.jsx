@@ -1,4 +1,7 @@
 import React, { useState, useEffect } from "react";
+import { Link, useNavigate, useLocation } from "react-router-dom";
+import emailjs from '@emailjs/browser';
+import PopupModal from "./PopupModal";
 import solarBg1 from "../assets/Herobg1.jpg";  
 import solarBg2 from "../assets/Herobg2.jpg";  
 import solarBg3 from "../assets/Herobg3.jpg";  
@@ -11,6 +14,7 @@ import { FaStar, FaPlus } from "react-icons/fa";
 import { motion, AnimatePresence } from "framer-motion";
 
 function HeroSection({ title, subtitle }) {
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const images = [solarBg1, solarBg2, solarBg3, solarBg4];
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -75,12 +79,17 @@ function HeroSection({ title, subtitle }) {
             <div className="flex flex-col md:flex-row items-start md:items-end justify-between w-full gap-8 pt-4">
               {/* Buttons Container */}
               <div className="flex flex-wrap items-center gap-6">
-                <button className="bg-green-600 hover:bg-green-500 border-2 border-transparent text-white px-8 py-3.5 rounded-full text-lg font-bold transition-all duration-300 shadow-lg shadow-green-500/20 active:scale-95">
+                <button 
+                  onClick={() => setIsModalOpen(true)}
+                  className="bg-green-600 hover:bg-green-500 border-2 border-transparent text-white px-8 py-3.5 rounded-full text-lg font-bold transition-all duration-300 shadow-lg shadow-green-500/20 active:scale-95 cursor-pointer"
+                >
                   Get Quote
                 </button>
-                <button className="border-2 border-white hover:bg-white/10 text-white px-8 py-3.5 rounded-full text-lg font-bold transition-all duration-300 active:scale-95">
-                  Contact Us
-                </button>
+                <Link to="/contact">
+                  <button className="border-2 border-white hover:bg-white/10 text-white px-8 py-3.5 rounded-full text-lg font-bold transition-all duration-300 active:scale-95">
+                    Contact Us
+                  </button>
+                </Link>
               </div>
 
               {/* Avatar / Review Group */}
@@ -137,6 +146,81 @@ function HeroSection({ title, subtitle }) {
           <p className="text-gray-400 text-sm text-left leading-tight"><i>Years Experience<br/>in the industry</i></p>
         </div>
       </div>
+
+      <PopupModal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+        title="Get a Quote"
+      >
+        <p className="text-gray-600">
+          Fill out your details below and we will get back to you with a quote.
+        </p>
+        <form 
+          className="flex flex-col gap-4 mt-4"
+          onSubmit={async (e) => {
+            e.preventDefault();
+            const formData = {
+              name: e.target.name.value,
+              email: e.target.email.value,
+              phone: e.target.phone.value,
+              projectType: e.target.projectType.value,
+              message: e.target.details.value,
+              type: "quote"
+            };
+
+            try {
+              // 1. Save to Database
+              const API_URL = import.meta.env.VITE_API_URL || (window.location.hostname === "localhost" ? "http://localhost:5000" : window.location.origin);
+              const response = await fetch(`${API_URL}/api/contact`, {
+                method: "POST",
+                headers: {
+                  "Content-Type": "application/json",
+                },
+                body: JSON.stringify(formData),
+              });
+
+              if (response.ok) {
+                // 2. Send Auto-Reply via EmailJS
+                emailjs.send(
+                  'service_qd7dh3w', 
+                  'template_26xj4fm', 
+                  {
+                    name: formData.name,
+                    email: formData.email,
+                    title: `Quote Request for ${formData.projectType}`,
+                  },
+                  '0vc5ZYvFCXzuVjVeH'
+                );
+
+                alert("Quote request sent! We will contact you shortly.");
+                setIsModalOpen(false);
+              } else {
+                alert("Failed to send request. Please try again.");
+              }
+            } catch (error) {
+              console.error("Error:", error);
+              alert("Something went wrong.");
+            }
+          }}
+        >
+          <input name="name" type="text" placeholder="Full Name" required className="border border-gray-200 px-4 py-3 rounded-xl text-black focus:outline-none focus:ring-2 focus:ring-green-500 transition-all bg-gray-50" />
+          <input name="email" type="email" placeholder="Email Address" required className="border border-gray-200 px-4 py-3 rounded-xl text-black focus:outline-none focus:ring-2 focus:ring-green-500 transition-all bg-gray-50" />
+          <input name="phone" type="tel" placeholder="Phone Number" className="border border-gray-200 px-4 py-3 rounded-xl text-black focus:outline-none focus:ring-2 focus:ring-green-500 transition-all bg-gray-50" />
+          
+          <select name="projectType" className="border border-gray-200 px-4 py-3 rounded-xl text-black focus:outline-none focus:ring-2 focus:ring-green-500 transition-all bg-gray-50">
+            <option value="" className="text-gray-500">Select Project Type</option>
+            <option>Residential</option>
+            <option>Commercial</option>
+            <option>Industrial</option>
+          </select>
+
+          <textarea name="details" placeholder="Project Details / Notes" className="border border-gray-200 px-4 py-3 rounded-xl text-black focus:outline-none focus:ring-2 focus:ring-green-500 transition-all bg-gray-50 h-32"></textarea>
+
+          <button type="submit" className="bg-green-600 text-white py-3 rounded-xl font-bold hover:bg-green-700 active:scale-95 transition-all shadow-lg shadow-green-600/20">
+            Get My Quote
+          </button>
+        </form>
+      </PopupModal>
     </>
   );
 }

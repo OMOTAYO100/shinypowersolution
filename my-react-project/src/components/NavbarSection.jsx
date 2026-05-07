@@ -29,7 +29,7 @@ const NavbarSection = () => {
             <p className="text-lg font-semibold">SHIN<span className="text-green-500">Y</span></p>
           </div>
           <ul
-            className={` flex flex-col md:gap-2  bg-white/95 text-green-500 font-semibold fixed rounded top-0 right-0 backdrop-blur-lg p-24 gap-4 ${
+            className={` flex flex-col md:gap-2  bg-white/95 text-green-500 sm:text-green-400 font-semibold fixed rounded top-0 right-0 p-24 gap-4 ${
               isOpen ? "scale-y-100" : "scale-y-0 "
             } origin-top z-30 transition-transform duration-300 md:flex-row md:scale-y-100 md:backdrop-blur-0 md:static md:p-2 md:bg-transparent`}
           >
