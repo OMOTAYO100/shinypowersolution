@@ -146,7 +146,7 @@ const NavbarSection = () => {
             </Link>
             
             {location.pathname === "/store" && (
-              <div onClick={toggleCart} className="text-green-500 hover:text-green-600 transition relative cursor-pointer" title="Shopping Cart">
+              <div onClick={toggleCart} className="text-green-500 hover:text-green-600 transition relative cursor-pointer " title="Shopping Cart">
                 <FaShoppingCart size={30} />
                 {cartItems.length > 0 && (
                   <span className="absolute -top-2 -right-2 bg-red-500 text-white text-[10px] font-bold rounded-full h-4 w-4 flex items-center justify-center">
