@@ -69,7 +69,7 @@ const subject = useRef();
   }
   return (
 
-    <section className="p-6 md:p-16 lg:p-20 bg-white font-Figtree">
+    <section className="p-6 md:p-16 lg:p-20 bg-white font-Figtree mt-12">
   <div className="flex flex-col-reverse md:flex-row gap-6 items-stretch justify-center">
     {/* Left Side - Image and Overlay */}
     <div className="flex-1 w-full min-h-[500px] flex items-center justify-center">

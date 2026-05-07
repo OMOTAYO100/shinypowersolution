@@ -17,7 +17,7 @@ import panelC from "../assets/solar-panel-image-M.jpg";
 function AboutHistory({ title, subtitle, description }) {
   return (
     <>
-      <div className="p-6 md:p-16 lg:p-20 font-Figtree">
+      <div className="p-6 md:p-16 lg:p-20 font-Figtree mt-18">
         <div className="flex flex-col md:flex-row items-center gap-12 sm:*:size-2/4" data-aos="fade-up" data-aos-delay="400">
           <div className="space-y-6">
             <h4 className="text-xl font-semibold text-green-400" data-aos="fade-up" data-aos-delay="100">{subtitle}</h4>

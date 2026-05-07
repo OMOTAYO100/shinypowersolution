@@ -6,7 +6,7 @@ import ServicesData from "../data/ServicesData";
 const ServicesSection = () => {
   return (
     <section 
-      className="mt-6 md:mt-16 lg:mt-20" 
+      className="mt-20 md:mt-16 lg:mt-20" 
       id="services" 
       data-aos="fade-up" 
       data-aos-delay="200"

@@ -15,9 +15,9 @@ function SolarStoreSection() {
     : products.filter(product => product.category === activeTab);
 
   return (
-    <section className="py-16 bg-gray-50">
+    <section className="py-16 bg-gray-50 mt-16">
       <div className="max-w-7xl mx-auto px-4">
-        <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">
+        <h2 className="text-3xl font-bold text-green-700 mb-8 text-center font-figtree">
           Solar Store
         </h2>
 
